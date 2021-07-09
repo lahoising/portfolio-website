@@ -1,0 +1,81 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#links
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    position: fixed;
+    bottom: 0em;
+    right: 0em;
+}
+
+#presentation-section
+{
+    background: rgb(143,31,209);
+    background: linear-gradient(90deg, rgba(141,33,205,1) 0%, rgba(195,99,252,1) 100%); 
+    color: white;
+
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+}
+
+#presentation-section > div
+{
+    width: 100%;
+}
+
+#presentation-quick
+{
+    padding-top: 30vh;
+    padding-left: 5em;
+}
+
+#presentation-quick > h1, h4
+{
+    margin: 0;
+}
+
+#presentation-name
+{
+    font-size: 5em;
+}
+
+#presentation-about
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#presentation-about-title
+{
+    text-align: center;
+}
+
+#presentation-about > div
+{
+    flex-grow: 1;
+}
+
+#about-content
+{
+    width: 70%;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 1em 1em black;
+    color: black;
+}
+
+#projects-section
+{
+    background-color: white;
+    height: 100vh;
+}
