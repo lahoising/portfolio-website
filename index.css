@@ -77,5 +77,62 @@ body
 #projects-section
 {
     background-color: white;
-    height: 100vh;
+}
+
+#projects-section > h1
+{
+    font-size: 4em;
+    text-align: center;
+}
+
+#projects-slideshow
+{
+    position: relative;
+    background-color: rgb(163, 163, 163);
+}
+
+.slides-container
+{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slide
+{
+    width: 50vw;
+    display: inline-block;
+}
+
+.slide > img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prev, .next 
+{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next 
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover 
+{
+    background-color: rgba(0, 0, 0, 0.8);
 }
