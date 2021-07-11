@@ -19,7 +19,6 @@ body
 
 #presentation-section
 {
-    background: rgb(143,31,209);
     background: linear-gradient(90deg, rgba(141,33,205,1) 0%, rgba(195,99,252,1) 100%); 
     color: white;
 
@@ -114,6 +113,12 @@ body
     float: left;
 }
 
+#projects-index > .project-container:hover
+{
+    color: white;
+    background-color: rgba(141,33,205,1);
+}
+
 .project-description
 {
     padding-left: 1em;
@@ -125,4 +130,52 @@ body
 .project-description > h2
 {
     margin-bottom: 0;
+}
+
+#contact-section
+{
+    background-color: black;
+    margin-top: 4.5em;
+    color: white;
+    text-align: center;
+
+    padding: 2em 0;
+}
+
+#contact-section > h1
+{
+    margin-top: 0;
+}
+
+.contact-form
+{
+    display: flex;
+    margin: auto;
+    width: min-content;
+}
+
+.contact-form > button
+{
+    background-color: white;
+    border-radius: 0;
+    border: none;
+
+    width: 4em;
+    height: 4em;
+}
+
+.contact-form > button > img
+{
+    margin: auto;
+}
+
+.contact-email
+{
+    background-color: rgba(220, 220, 220, 1);
+    color: black;
+    text-align: left;
+    padding: 0 1em;
+
+    display: flex;
+    align-items: center;
 }
