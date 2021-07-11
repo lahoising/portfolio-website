@@ -41,16 +41,27 @@ function CopyEmail()
     CopyTextToClipboard(emailText.innerText);
 }
 
-let copyButton = document.getElementById('copy-button');
-let copyButtonImg = document.getElementById('copy-button-img');
-function OnCopyButtonHover()
+function GetCoppyButtonElements(form)
 {
-    copyButtonImg.setAttribute('src', 'https://img.icons8.com/material-outlined/24/000000/clipboard.png');
-    copyButton.style.backgroundColor = '#a842e4';
+    return [
+        form.getElementsByClassName('copy-button')[0],
+        form.getElementsByClassName('copy-button-img')[0],
+        form.getElementsByClassName('contact-email')[0]
+    ];
 }
 
-function OnCopyButtonUnhover()
+function OnCopyButtonHover(contactForm)
 {
+    [copyButton, copyButtonImg, emailDisplay] = GetCoppyButtonElements(contactForm);
+    copyButtonImg.setAttribute('src', 'https://img.icons8.com/material-outlined/24/ffffff/clipboard.png');
+    copyButton.style.backgroundColor = '#a842e4';
+    emailDisplay.style.backgroundColor = 'white';
+}
+
+function OnCopyButtonUnhover(contactForm)
+{
+    [copyButton, copyButtonImg, emailDisplay] = GetCoppyButtonElements(contactForm);
     copyButtonImg.setAttribute('src', 'https://img.icons8.com/material-outlined/24/000000/new-post.png');
     copyButton.style.backgroundColor = 'white';
+    emailDisplay.style.backgroundColor = 'rgba(220, 220, 220, 1)';
 }

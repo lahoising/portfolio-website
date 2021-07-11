@@ -69,11 +69,11 @@
         <div 
             class="contact-form" 
             onclick="CopyEmail()" 
-            onmouseover="OnCopyButtonHover()"
-            onmouseout="OnCopyButtonUnhover()">
+            onmouseover="OnCopyButtonHover(this)"
+            onmouseout="OnCopyButtonUnhover(this)">
 
-            <button id='copy-button'>
-                <img id='copy-button-img' src="https://img.icons8.com/material-outlined/24/000000/new-post.png"/>
+            <button class='copy-button'>
+                <img class='copy-button-img' src="https://img.icons8.com/material-outlined/24/000000/new-post.png"/>
             </button>
             <div class="contact-email">
                 <p>lahoising78@gmail.com</p>
