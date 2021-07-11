@@ -152,6 +152,8 @@ body
     display: flex;
     margin: auto;
     width: min-content;
+
+    cursor: pointer;
 }
 
 .contact-form > button
@@ -159,9 +161,7 @@ body
     background-color: white;
     border-radius: 0;
     border: none;
-
-    pointer-events: inherit;
-
+    cursor: inherit;
     width: 4em;
     height: 4em;
 }
