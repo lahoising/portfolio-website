@@ -40,3 +40,17 @@ function CopyEmail()
     let emailText = document.getElementsByClassName('contact-email')[0].getElementsByTagName('p')[0];
     CopyTextToClipboard(emailText.innerText);
 }
+
+let copyButton = document.getElementById('copy-button');
+let copyButtonImg = document.getElementById('copy-button-img');
+function OnCopyButtonHover()
+{
+    copyButtonImg.setAttribute('src', 'https://img.icons8.com/material-outlined/24/000000/clipboard.png');
+    copyButton.style.backgroundColor = '#a842e4';
+}
+
+function OnCopyButtonUnhover()
+{
+    copyButtonImg.setAttribute('src', 'https://img.icons8.com/material-outlined/24/000000/new-post.png');
+    copyButton.style.backgroundColor = 'white';
+}
