@@ -116,7 +116,7 @@ body
 #projects-index > .project-container:hover
 {
     color: white;
-    background-color: rgba(141,33,205,1);
+    background-color: #a842e4;
 }
 
 .project-description
@@ -159,6 +159,8 @@ body
     background-color: white;
     border-radius: 0;
     border: none;
+
+    pointer-events: inherit;
 
     width: 4em;
     height: 4em;
